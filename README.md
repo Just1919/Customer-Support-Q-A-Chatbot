@@ -1,4 +1,6 @@
 # Customer-Support-Q-A-Chatbot
+This project aims to build a chatbot that leverages GPT-3 to search for
+answers within documents.
 
 Traditionally, chatbots were designed around predefined user intents, built from sets of example questions and fixed responses tailored to specific business use cases.
 
