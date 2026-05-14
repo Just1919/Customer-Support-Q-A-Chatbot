@@ -1,13 +1,45 @@
-# Customer-Support-Q-A-Chatbot
-This project aims to build a chatbot that leverages GPT-3 to search for
-answers within documents.
+# Customer Support Q&A Chatbot (RAG-based)
 
-Traditionally, chatbots were designed around predefined user intents, built from sets of example questions and fixed responses tailored to specific business use cases.
+This project aims to build a Customer Support Q&A chatbot powered by Retrieval-Augmented Generation (RAG) and GPT models. The chatbot retrieves relevant information from external documents to generate accurate and context-aware responses.
 
-For example, in an e-commerce customer support context, an intent like "Order Tracking" might include questions such as "Where is my order?" or "Can you track my package?", with predefined answers like "Your order has been shipped and will arrive in 2 days" or "Your package is currently in transit."
+---
 
-Another common business intent is "Refund and Returns", handling queries like "How do I return a product?" or "Can I get a refund?", with responses such as "You can return your product within 30 days using our return portal" or "Your refund request has been approved and will be processed within 5 business days."
+## 🧠 Project Overview
 
-In this traditional setup, the chatbot operates by matching the user’s query to the closest predefined intent, then returning a corresponding scripted response. While effective for structured and repetitive queries, this approach is limited when users ask unexpected or more complex questions.
+Traditionally, chatbots are built using predefined intents and fixed responses. For example:
 
-With the rise of Large Language Models (LLMs), chatbot development is evolving. Modern business chatbots can now understand context, handle more complex customer interactions, and generate more natural and personalized responses, improving customer experience across a wider range of scenarios.
+- **Order Tracking**: "Where is my order?"
+- **Refund & Returns**: "How do I return a product?"
+
+While effective for simple and repetitive queries, this approach is limited when handling complex or unseen questions.
+
+With the rise of Large Language Models (LLMs), modern chatbots can understand context and generate dynamic responses. However, they may still hallucinate without external knowledge.
+
+This project solves this problem using **RAG (Retrieval-Augmented Generation)**, which allows the chatbot to retrieve relevant information from documents before generating an answer.
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- LangChain
+- OpenAI GPT models
+- Vector Database (Deep Lake / ChromaDB)
+- Embeddings
+- Web document loaders
+
+---
+
+## 🚀 Key Features
+
+- Document ingestion from web sources
+- Text chunking and embedding generation
+- Semantic search using vector databases
+- RAG-based response generation
+- Customer support chatbot simulation
+
+---
+
+## 📌 Goal
+
+To demonstrate how RAG improves LLM performance by grounding responses in external knowledge sources and reducing hallucinations.
